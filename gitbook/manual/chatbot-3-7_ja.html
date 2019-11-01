@@ -1,0 +1,3080 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>2-7. チャットボットのCustom API Spec. · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="chatbot-3-8_ja.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    1.LINE BRAIN CHATBOTスタートガイド
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="chatbot-1-2_ja.html">
+            
+                <a href="chatbot-1-2_ja.html">
+            
+                    
+                    1-1. チャットボットサービスを始める前に考慮すべきこと
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="chatbot-1-1_ja.html">
+            
+                <a href="chatbot-1-1_ja.html">
+            
+                    
+                    1-2. Quick Start Guide
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="chatbot-1-3_ja.html">
+            
+                <a href="chatbot-1-3_ja.html">
+            
+                    
+                    1-3. よくある質問
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    2.LINE BRAIN CHATBOT利用ガイド
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="chatbot-3-1_ja.html">
+            
+                <a href="chatbot-3-1_ja.html">
+            
+                    
+                    2-1. ドメイン
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="chatbot-3-2_ja.html">
+            
+                <a href="chatbot-3-2_ja.html">
+            
+                    
+                    2-2. Conversation Listの管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="chatbot-3-3_ja.html">
+            
+                <a href="chatbot-3-3_ja.html">
+            
+                    
+                    2-3. 会話コンポーネント
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="chatbot-3-4_ja.html">
+            
+                <a href="chatbot-3-4_ja.html">
+            
+                    
+                    2-4. 統計管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="chatbot-3-5_ja.html">
+            
+                <a href="chatbot-3-5_ja.html">
+            
+                    
+                    2-5. チャットボットのAdvancedガイド
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="chatbot-3-8_ja.html">
+            
+                <a href="chatbot-3-8_ja.html">
+            
+                    
+                    2-6. 正規表現の入力ガイド
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.7" data-path="chatbot-3-7_ja.html">
+            
+                <a href="chatbot-3-7_ja.html">
+            
+                    
+                    2-7. チャットボットのCustom API Spec.
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    3.チャンネル連動ガイド
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="chatbot-2-1_ja.html">
+            
+                <a href="chatbot-2-1_ja.html">
+            
+                    
+                    3-1. チャンネル連動ガイド - LINE
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    4.有人チャットツール連動ガイド
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="chatbot-2-7_ja.html">
+            
+                <a href="chatbot-2-7_ja.html">
+            
+                    
+                    4-1. Agent Connectionsガイド - LINE(LINE Switcher API)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    5.拡張サービス連動ガイド
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="chatbot-2-8_ja.html">
+            
+                <a href="chatbot-2-8_ja.html">
+            
+                    
+                    5-1. LINE PAYサービス連動ガイド
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >2-7. チャットボットのCustom API Spec.</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x30C1;&#x30E3;&#x30C3;&#x30C8;&#x30DC;&#x30C3;&#x30C8;&#x306E;custom-api-spec">&#x30C1;&#x30E3;&#x30C3;&#x30C8;&#x30DC;&#x30C3;&#x30C8;&#x306E;Custom API Spec.</h1>
+<p><strong>Status: finished v2.5</strong></p>
+<table>
+<thead>
+<tr>
+<th>version</th>
+<th>date</th>
+<th>update</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>v2.5</td>
+<td>2019-04-22</td>
+<td>split flex to <a href="#special-messenger-component">Special Messenger Component</a>.<br>add <a href="#line-sticker">LineSticker</a> and <a href="#lineworks-sticker">LineWorksSticker</a>.<br>modify <a href="#postback">Action.Postback</a> define.<br>add keywords in success <a href="#success">response</a>.</td>
+</tr>
+<tr>
+<td><a href="chatbot-3-6-2.md">v2.4</a></td>
+<td>2019-03-12</td>
+<td>improve entities specification in <a href="#response-status">Response Status</a>. Attention: entities array model changes from v2.3.</td>
+</tr>
+<tr>
+<td>v2.3</td>
+<td>2019-02-27</td>
+<td>add get Persistent Menu event add scenario, entities in success response.</td>
+</tr>
+<tr>
+<td>v2.2</td>
+<td>2019-01-04</td>
+<td>support Flex Message(LINE)&amp;[Persistent Menu. add persistent Menu in success response. add persistent menu examples. Template Component add background image, cover not required. add new action: Utterance. improve some descriptions.</td>
+</tr>
+<tr>
+<td>v2.1</td>
+<td>2018-11-16</td>
+<td>add new action: Welcome, open event support one text bubble</td>
+</tr>
+<tr>
+<td><a href="chatbot-3-6-1.md">v2.0</a></td>
+<td>2018-11-07</td>
+<td>new structure, add signature</td>
+</tr>
+<tr>
+<td><a href="chatbot-3-6.md">v1.2</a></td>
+<td>2018-08-08</td>
+<td>version 1.2</td>
+</tr>
+</tbody>
+</table>
+<h2 id="table-of-contents">Table of Contents</h2>
+<ul>
+<li><a href="#summary">Summary</a></li>
+<li><a href="#request">Request</a><ul>
+<li><a href="#request-event">Request Event</a><ul>
+<li><a href="#open">open</a></li>
+<li><a href="#send">send</a></li>
+<li><a href="#getpersistentmenu">get persistent menu event</a></li>
+</ul>
+</li>
+<li><a href="#signature-header">Signature Header</a></li>
+</ul>
+</li>
+<li><p><a href="#response">Response</a></p>
+<ul>
+<li><a href="#response-status">Response Status</a><ul>
+<li><a href="#success">success</a></li>
+<li><a href="#error">error</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><a href="#component">Component</a></p>
+<ul>
+<li><a href="#basic-component">Basic Component</a><ul>
+<li><a href="#text">Text</a></li>
+<li><a href="#image">Image</a></li>
+<li><a href="#button">Button</a></li>
+</ul>
+</li>
+<li><a href="#composite-component">Composite Component</a><ul>
+<li><a href="#template">Template</a></li>
+<li><a href="#carousel">Carousel</a></li>
+</ul>
+</li>
+<li><a href="#special-messenger-component">Special Messenger Component</a><ul>
+<li><a href="#line-flex">LineFlex</a></li>
+<li><a href="#line-sticker">LineSticker</a></li>
+<li><a href="#lineworks-sticker">LineWorksSticker</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><a href="#action">Action</a></p>
+<ul>
+<li><a href="#postback">Postback</a></li>
+<li><a href="#utterance">Utterance</a></li>
+<li><a href="#link">Link</a></li>
+<li><a href="#phone">Phone</a></li>
+<li><a href="#welcome">Welcome</a></li>
+</ul>
+</li>
+<li><p><a href="#quick-button">Quick Button</a></p>
+</li>
+<li><p><a href="#persistent-menu">Persistent Menu</a></p>
+</li>
+<li><p><a href="#response-examples">Response Examples</a></p>
+<ul>
+<li><a href="#text-1">Text</a><ul>
+<li><a href="#only-normal-text">only normal text</a></li>
+<li><a href="#full-style-with-postback-action">full style with postback action</a></li>
+</ul>
+</li>
+<li><a href="#image-1">Image</a><ul>
+<li><a href="#only-image-at-the-bottom-with-description">only image at the bottom with description</a></li>
+<li><a href="#full-style-image-on-the-top-with-link-action">full style image on the top with link action</a></li>
+</ul>
+</li>
+<li><a href="#template-1">Template</a><ul>
+<li><a href="#text--buttons">Text + Buttons</a></li>
+<li><a href="#image--buttons">Image + Buttons</a></li>
+<li><a href="#image-list">Image List</a></li>
+<li><a href="#minibuttons">MiniButtons</a></li>
+<li><a href="#imagebuttons">ImageButtons</a></li>
+</ul>
+</li>
+<li><a href="#carousel-1">Carousel</a><ul>
+<li><a href="#only-images">only images</a></li>
+<li><a href="#template-with-image--buttons">template with image + buttons</a></li>
+</ul>
+</li>
+<li><a href="#line-flex-1">Line Flex</a></li>
+<li><a href="#quick-buttons">Quick Buttons</a></li>
+<li><a href="#persistent-menu-1">Persistent Menu</a><ul>
+<li><a href="#text-buttons">text buttons</a></li>
+<li><a href="#image-buttons-use-small-icons">image buttons use small icons</a></li>
+<li><a href="#buttons-use-one-background-image">buttons use one background image</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><a href="#error-define">Error Define</a></p>
+</li>
+</ul>
+<h2 id="request">Request</h2>
+<ul>
+<li>Custom Messenger -&gt; Chatbot</li>
+<li>Http Method: POST</li>
+<li>Headers</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>name</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Content-Type</td>
+<td>&quot;application/json;UTF-8&quot;</td>
+</tr>
+<tr>
+<td>X-NCP-CHATBOT_SIGNATURE</td>
+<td>signature of request body</td>
+</tr>
+</tbody>
+</table>
+<h3 id="signature-header">Signature Header</h3>
+<ul>
+<li>Signature<ul>
+<li>Algorithm: HmacSHA256</li>
+<li>SecretKey: Copy from chatbot Custom config in &quot;Messenger connection&quot; page.</li>
+<li>Sign content: Reqeust body.</li>
+</ul>
+</li>
+<li><code>X-NCP-CHATBOT_SIGNATURE</code>: Use Base64 encode signature bytes, and put base64 string in request header <code>X-NCP-CHATBOT_SIGNATURE</code></li>
+</ul>
+<h3 id="request-event">Request Event</h3>
+<h4 id="open">open</h4>
+<ul>
+<li>trigger when open messenger, will response welcome message if have set in &quot;Messenger Connection&quot; -&gt; &quot;Custom&quot;</li>
+<li><p>Body Example</p>
+<pre><code>  {
+    &quot;version&quot;: &quot;v2&quot;,
+    &quot;userId&quot;: &quot;U47b00b58c90f8e47428af8b7bddcda3d&quot;,
+    &quot;userIp&quot;: &quot;8.8.8.8&quot;,
+    &quot;timestamp&quot;: 12345678,
+    &quot;bubbles&quot;: [
+      {
+        &quot;type&quot;: &quot;text&quot;,
+        &quot;data&quot; : {
+          &quot;description&quot; : &quot;postback text of welcome action&quot;
+        }
+      }
+    ],
+    &quot;event&quot;: &quot;open&quot;
+  }
+</code></pre></li>
+<li>Body Introduce</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>version</td>
+<td>string</td>
+<td>false</td>
+<td>&apos;v2&apos;, protocol version, if not set, default process as &apos;v1&apos;</td>
+</tr>
+<tr>
+<td>userId</td>
+<td>string</td>
+<td>true</td>
+<td>unique id for user who chat with bot, no longer than 256 charactor. Please use different userId for different user to improve history</td>
+</tr>
+<tr>
+<td>userIp</td>
+<td>string</td>
+<td>false</td>
+<td>user ip address, not required</td>
+</tr>
+<tr>
+<td>timestamp</td>
+<td>long</td>
+<td>true</td>
+<td>current milliseconds since January 1, 1970, 00:00:00 GMT</td>
+</tr>
+<tr>
+<td>bubbles</td>
+<td>array</td>
+<td>true</td>
+<td>empty array &quot;[]&quot; or only one <a href="#text">Text</a> component caused by <a href="#welcome">welcome action</a></td>
+</tr>
+<tr>
+<td>event</td>
+<td>string</td>
+<td>true</td>
+<td>fixed string value &quot;open&quot;</td>
+</tr>
+</tbody>
+</table>
+<h4 id="send">send</h4>
+<ul>
+<li>send user chat message</li>
+<li>Body Example<pre><code>  {
+    &quot;version&quot;: &quot;v2&quot;,
+    &quot;userId&quot;: &quot;U47b00b58c90f8e47428af8b7bddcda3d&quot;,
+    &quot;userIp&quot;: &quot;8.8.8.8&quot;,
+    &quot;timestamp&quot;: 12345678,
+    &quot;bubbles&quot;: [
+      {
+        &quot;type&quot;: &quot;text&quot;,
+        &quot;data&quot; : {
+          &quot;description&quot; : &quot;text content which is user input&quot;
+        }
+      }
+    ],
+    &quot;event&quot;: &quot;send&quot;
+  }
+</code></pre></li>
+<li>Body Introduce</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>version</td>
+<td>string</td>
+<td>false</td>
+<td>&apos;v2&apos;, protocol version, if not set, default process as &apos;v1&apos;</td>
+</tr>
+<tr>
+<td>userId</td>
+<td>string</td>
+<td>true</td>
+<td>unique id for user who chat with bot, no longer than 256 charactor. Please use different userId for different user to improve history</td>
+</tr>
+<tr>
+<td>userIp</td>
+<td>string</td>
+<td>false</td>
+<td>user ip address, not required</td>
+</tr>
+<tr>
+<td>timestamp</td>
+<td>long</td>
+<td>true</td>
+<td>current milliseconds since January 1, 1970, 00:00:00 GMT</td>
+</tr>
+<tr>
+<td>bubbles</td>
+<td>array[<a href="#text">Text</a>]</td>
+<td>true</td>
+<td>only support one <a href="#text">Text</a> component, if there are more than one Text content, will use the last one as user request</td>
+</tr>
+<tr>
+<td>event</td>
+<td>string</td>
+<td>true</td>
+<td>fixed string value &quot;send&quot;</td>
+</tr>
+</tbody>
+</table>
+<p><em>Back to <a href="#table-of-contents">Table of Contents</a></em></p>
+<h4 id="getpersistentmenu">getPersistentMenu</h4>
+<ul>
+<li><p>if need show persistent menu but local cache not exists, could request <a href="#persistent-menu">PersistentMenu</a>, will response persistentMenu field if fixed menu have set in messengers custom tab.</p>
+</li>
+<li><p>Body Example</p>
+<pre><code>  {
+    &quot;version&quot;: &quot;v2&quot;,
+    &quot;userId&quot;: &quot;U47b00b58c90f8e47428af8b7bddcda3d&quot;,
+    &quot;userIp&quot;: &quot;8.8.8.8&quot;,
+    &quot;timestamp&quot;: 12345678,
+    &quot;bubbles&quot;: [],
+    &quot;event&quot;: &quot;getPersistentMenu&quot;
+  }
+</code></pre></li>
+<li><p>Body Introduce</p>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>version</td>
+<td>string</td>
+<td>false</td>
+<td>&apos;v2&apos;, protocol version, if not set, default process as &apos;v1&apos;</td>
+</tr>
+<tr>
+<td>userId</td>
+<td>string</td>
+<td>true</td>
+<td>unique id for user who chat with bot, no longer than 256 charactor. Please use different userId for different user to improve history</td>
+</tr>
+<tr>
+<td>userIp</td>
+<td>string</td>
+<td>false</td>
+<td>user ip address, not required</td>
+</tr>
+<tr>
+<td>timestamp</td>
+<td>long</td>
+<td>true</td>
+<td>current milliseconds since January 1, 1970, 00:00:00 GMT</td>
+</tr>
+<tr>
+<td>bubbles</td>
+<td>array</td>
+<td>true</td>
+<td>empty array &quot;[]&quot;</td>
+</tr>
+<tr>
+<td>event</td>
+<td>string</td>
+<td>true</td>
+<td>fixed string value &quot;getPersistentMenu&quot;</td>
+</tr>
+</tbody>
+</table>
+<p><em>Back to <a href="#table-of-contents">Table of Contents</a></em></p>
+<h2 id="response">Response</h2>
+<ul>
+<li>Chatbot -&gt; Custom Messenger</li>
+<li>Headers</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>name</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Content-Type</td>
+<td>&quot;application/json;UTF-8&quot;</td>
+</tr>
+</tbody>
+</table>
+<h3 id="response-status">Response Status</h3>
+<h4 id="success">Success</h4>
+<ul>
+<li>Http Status Code: 200</li>
+<li>Body Example<pre><code>  {
+    &quot;version&quot;: &quot;v2&quot;,
+    &quot;userId&quot;: &quot;U47b00b58c90f8e47428af8b7bddcda3d&quot;,
+    &quot;sessionId&quot;: &quot;34a59946-5dcb-4b72-9b63-a773c659702e&quot;,
+    &quot;timestamp&quot;: 12345678,
+    &quot;bubbles&quot;: [
+      // each component is a bubble
+    ],
+    &quot;quickButtons&quot;: [
+      // some buttons
+    ],
+    &quot;scenario&quot;: {
+      &quot;name&quot;: &quot;analyzedScenarioName&quot;,
+      &quot;intent&quot;: [
+        // some scenario intent
+      ]
+    },
+    &quot;entities&quot;: [
+      {
+        &quot;word&quot;: &quot;userInputWord&quot;,
+        &quot;name&quot;: &quot;analyzedEntityName&quot;
+      }
+    ],
+    &quot;keywords&quot;: [
+      {
+        &quot;keyword&quot;: &quot;userInputKeyword&quot;,
+        &quot;group&quot;: &quot;analyzedKeywordGroupName&quot;,
+        &quot;type&quot;: &quot;analyzedKeywordType&quot;
+      }
+    ],
+    &quot;persistentMenu&quot;: {
+      // one template component
+    },
+    &quot;event&quot;: &quot;send&quot;
+  }
+</code></pre></li>
+<li>Body Introduce</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Must Exists</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>version</td>
+<td>string</td>
+<td>false</td>
+<td>&apos;v2&apos;, protocol version, if not set, default process as &apos;v1&apos;</td>
+</tr>
+<tr>
+<td>userId</td>
+<td>string</td>
+<td>true</td>
+<td>same with <a href="#request">Request</a> userId</td>
+</tr>
+<tr>
+<td>sessionId</td>
+<td>string</td>
+<td>false</td>
+<td>current session id, managed by chatbot</td>
+</tr>
+<tr>
+<td>timestamp</td>
+<td>long</td>
+<td>true</td>
+<td>response time milliseconds since January 1, 1970, 00:00:00 GMT</td>
+</tr>
+<tr>
+<td>bubbles</td>
+<td>array[<a href="#component">Component</a>]</td>
+<td>false</td>
+<td>array of any <a href="#component">Component</a>, each component is a bubble</td>
+</tr>
+<tr>
+<td>quickButtons</td>
+<td>array[<a href="#component">Component</a>]</td>
+<td>false</td>
+<td>array of <a href="#button">Basic Button</a>, show at the bottom of chat window</td>
+</tr>
+<tr>
+<td>scenario</td>
+<td>jsonObject</td>
+<td>false</td>
+<td>the analyzed result of user&apos;s chat matches scenario, contains scenario name and intent</td>
+</tr>
+<tr>
+<td>entities</td>
+<td>array[jsonObject]</td>
+<td>false</td>
+<td>the words that match entities in user&apos;s chat</td>
+</tr>
+<tr>
+<td>keywords</td>
+<td>array[jsonObject]</td>
+<td>false</td>
+<td>the words that match keyword in user&apos;s chat. Keyword have 2 types: &quot;exactMatch&quot; or &quot;contain&quot;, &quot;exactMatch&quot; means user input full matches the keyword, &quot;contain&quot; means user input contains the keyword</td>
+</tr>
+<tr>
+<td>persistentMenu</td>
+<td><a href="#template">Template Component</a></td>
+<td>false</td>
+<td>set persistent menu, introduction reference <a href="#persistent-menu">PersistentMenu</a></td>
+</tr>
+<tr>
+<td>event</td>
+<td>string</td>
+<td>true</td>
+<td>fixed string value &quot;send&quot;</td>
+</tr>
+</tbody>
+</table>
+<p><img src="../assets/chatbot-03-clip_image002.png" alt="new general"></p>
+<ul>
+<li><strong>You can quick start with some <a href="#response-examples">Response Examples</a>.</strong></li>
+</ul>
+<h4 id="error">Error</h4>
+<ul>
+<li>Http Status Code: 500</li>
+<li>Body Example<pre><code>  {
+    &quot;code&quot;: &quot;1001&quot;,
+    &quot;message&quot;: &quot;domain code &apos;test&apos; not found&quot;,
+    &quot;timestamp&quot;: 12345678
+  }
+</code></pre></li>
+<li>details introduce go to <a href="#error-define">Error Define</a></li>
+</ul>
+<p><em>Back to <a href="#table-of-contents">Table of Contents</a></em></p>
+<h2 id="component">Component</h2>
+<p>all component use same json structure</p>
+<pre><code>{
+  &quot;type&quot;: &quot;...&quot;,
+  &quot;title&quot;: &quot;optional, short bold text&quot;,
+  &quot;subTitle&quot;: &quot;optional, short gray text&quot;,
+  &quot;data&quot; : {
+    ...
+  }
+}
+</code></pre><ul>
+<li><a href="#basic-component">Basic</a></li>
+<li><a href="#composite-component">Composite</a></li>
+</ul>
+<h3 id="basic-component">Basic Component</h3>
+<ul>
+<li><a href="#text">Text</a></li>
+<li><a href="#image">Image</a></li>
+<li><a href="#button">Button</a></li>
+</ul>
+<h4 id="text">Text</h4>
+<p><img src="../assets/chatbot-03-clip_image003.png" alt="new text"></p>
+<ul>
+<li>Type: text</li>
+<li>Json Structure<pre><code>  {
+    &quot;type&quot;: &quot;text&quot;,
+    &quot;title&quot;: &quot;optional, short bold text&quot;,
+    &quot;subTitle&quot;: &quot;optional, short gray text&quot;,
+    &quot;data&quot; : {
+      &quot;description&quot; : &quot;optional, a long text content&quot;,
+      &quot;url&quot; : &quot;optional, a hyperlink at the bottom of description&quot;,
+      &quot;urlAlias&quot; : &quot;optional, hyperlink show this alias&quot;,
+      &quot;action&quot;: {[Action Data](#action)}
+    }
+  }
+</code></pre></li>
+<li>Introduce</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Must Exists</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>string</td>
+<td>true</td>
+<td>text</td>
+</tr>
+<tr>
+<td>title</td>
+<td>string</td>
+<td>false</td>
+<td>short bold text</td>
+</tr>
+<tr>
+<td>subTitle</td>
+<td>string</td>
+<td>false</td>
+<td>short gray text</td>
+</tr>
+<tr>
+<td>data.description</td>
+<td>string</td>
+<td>false</td>
+<td>a long text content</td>
+</tr>
+<tr>
+<td>data.url</td>
+<td>string</td>
+<td>false</td>
+<td>the hyperlink jump url</td>
+</tr>
+<tr>
+<td>data.urlAlias</td>
+<td>string</td>
+<td>false</td>
+<td>the hyperlink show text</td>
+</tr>
+<tr>
+<td>data.action</td>
+<td><a href="#action">Action</a></td>
+<td>false</td>
+<td>the action of click on text or title</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>You can reference to some <a href="#text-1">Text Examples</a>.</strong></li>
+</ul>
+<h4 id="image">Image</h4>
+<p><img src="../assets/chatbot-03-clip_image004.png" alt="new image"></p>
+<ul>
+<li>Type: image</li>
+<li>Json Structure<pre><code>  {
+    &quot;type&quot;: &quot;image&quot;,
+    &quot;title&quot;: &quot;optional, short bold text&quot;,
+    &quot;subTitle&quot;: &quot;optional, short gray text&quot;,
+    &quot;data&quot; : {
+      &quot;imageUrl&quot; : &quot;https://ssl.pstatic.net/CloudFunctions.png&quot;,
+      &quot;alt&quot; : &quot;optional, short hint show when hover on image&quot;,
+      &quot;imagePosition&quot; : &quot;top&quot;,
+      &quot;description&quot; : &quot;optional, details info of image&quot;,
+      &quot;url&quot; : &quot;optional, a hyperlink at the bottom of description&quot;,
+      &quot;urlAlias&quot; : &quot;optional, hyperlink show this alias&quot;,
+      &quot;action&quot;: {[Action Data](#action)}
+    }
+  }
+</code></pre></li>
+<li>Introduce</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Must Exists</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>string</td>
+<td>true</td>
+<td>image</td>
+</tr>
+<tr>
+<td>title</td>
+<td>string</td>
+<td>false</td>
+<td>short bold text</td>
+</tr>
+<tr>
+<td>subTitle</td>
+<td>string</td>
+<td>false</td>
+<td>short gray text</td>
+</tr>
+<tr>
+<td>data.imageUrl</td>
+<td>string</td>
+<td>true</td>
+<td>image url, must be https url</td>
+</tr>
+<tr>
+<td>data.alt</td>
+<td>string</td>
+<td>false</td>
+<td>short hint text show hover on image</td>
+</tr>
+<tr>
+<td>data.imagePosition</td>
+<td>string</td>
+<td>false</td>
+<td>top / bottom / left / right, default is top</td>
+</tr>
+<tr>
+<td>data.description</td>
+<td>string</td>
+<td>false</td>
+<td>details info of image</td>
+</tr>
+<tr>
+<td>data.url</td>
+<td>string</td>
+<td>false</td>
+<td>the hyperlink jump url</td>
+</tr>
+<tr>
+<td>data.urlAlias</td>
+<td>string</td>
+<td>false</td>
+<td>the hyperlink show text</td>
+</tr>
+<tr>
+<td>data.action</td>
+<td><a href="#action">Action</a></td>
+<td>false</td>
+<td>the action of click on image or title</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>You can reference to some <a href="#image-1">Image Examples</a>.</strong></li>
+</ul>
+<h4 id="button">Button</h4>
+<p><img src="../assets/chatbot-03-clip_image005.png" alt="new button"></p>
+<ul>
+<li>Type: button</li>
+<li>Json Structure<ul>
+<li>basic button<pre><code>{
+  &quot;type&quot;: &quot;button&quot;,
+  &quot;title&quot;: &quot;optional, text show on button&quot;,
+  &quot;subTitle&quot;: &quot;optional, short gray text&quot;,
+  &quot;data&quot; : {
+    &quot;type&quot;: &quot;basic&quot;,
+    &quot;iconUrl&quot; : &quot;https://ssl.pstatic.net/CloudFunctions.png&quot;,
+    &quot;action&quot;: {[Action Data](#action)}
+  }
+}
+</code></pre></li>
+<li>image button<pre><code>{
+  &quot;type&quot;: &quot;button&quot;,
+  &quot;title&quot;: &quot;optional, text show on button&quot;,
+  &quot;subTitle&quot;: &quot;optional, short gray text&quot;,
+  &quot;data&quot; : {
+    &quot;type&quot;: &quot;imageButton&quot;,
+    &quot;iconUrl&quot; : &quot;https://ssl.pstatic.net/CloudFunctions.png&quot;,
+    &quot;action&quot;: {[Action Data](#action)}
+  }
+}
+</code></pre></li>
+</ul>
+</li>
+<li>Introduce</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Must Exists</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>string</td>
+<td>true</td>
+<td>button</td>
+</tr>
+<tr>
+<td>title</td>
+<td>string</td>
+<td>false</td>
+<td>text show on button</td>
+</tr>
+<tr>
+<td>subTitle</td>
+<td>string</td>
+<td>false</td>
+<td>short gray text</td>
+</tr>
+<tr>
+<td>data.type</td>
+<td>string</td>
+<td>true</td>
+<td>basic or imageButton</td>
+</tr>
+<tr>
+<td>data.iconUrl</td>
+<td>string</td>
+<td>false</td>
+<td>button icon url, must be https url</td>
+</tr>
+<tr>
+<td>data.action</td>
+<td><a href="#action">Action</a></td>
+<td>true</td>
+<td>the action of click on button</td>
+</tr>
+</tbody>
+</table>
+<p><em>Back to <a href="#table-of-contents">Table of Contents</a></em></p>
+<h3 id="composite-component">Composite Component</h3>
+<ul>
+<li><a href="#template">Template</a></li>
+<li><a href="#carousel">Carousel</a></li>
+</ul>
+<h4 id="template">Template</h4>
+<p><img src="../assets/chatbot-03-clip_image006.png" alt="new template general"></p>
+<p>Template is made up by basic components.
+Template have three part: cover, contentTable, footTable. cover is the major content. contentTable, footTable are table layout.</p>
+<ul>
+<li>Type: template</li>
+<li>Json Structure<pre><code>  {
+    &quot;type&quot;: &quot;template&quot;,
+    &quot;title&quot;: &quot;optional, short bold text&quot;,
+    &quot;subTitle&quot;: &quot;optional, short gray text&quot;,
+    &quot;data&quot;:{
+      &quot;cover&quot;:{
+        // any basic component
+      },
+      &quot;contentTableShowRows&quot;: 3, // if row count more than 3, should be fold
+      &quot;contentBackgroundImage&quot;:&quot;https://ssl.pstatic.net/CloudFunctions.png&quot;, // optinal
+      &quot;contentTable&quot;:[ // table layout
+        [ // first row
+          {
+            &quot;colSpan&quot;: 1,
+            &quot;rowSpan&quot;: 2,
+            &quot;data&quot;:{
+              // any basic component type
+            }
+          },
+          // other cells in first row
+        ],
+        // another rows
+      ],
+      &quot;footTableShowRows&quot;:3, // if row count more than 3, should be fold
+      &quot;footBackgroundImage&quot;:&quot;https://ssl.pstatic.net/CloudFunctions.png&quot;, // optinal
+      &quot;footTable&quot;:[
+        // table layout same as contentTable
+      ]
+    }
+  }
+</code></pre></li>
+<li>Introduce</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Must Exists</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>string</td>
+<td>true</td>
+<td>template</td>
+</tr>
+<tr>
+<td>title</td>
+<td>string</td>
+<td>false</td>
+<td>short bold text</td>
+</tr>
+<tr>
+<td>subTitle</td>
+<td>string</td>
+<td>false</td>
+<td>short gray text</td>
+</tr>
+<tr>
+<td>data.cover</td>
+<td><a href="#basic-component">Basic Component</a></td>
+<td>false</td>
+<td>one Text / Image / Button</td>
+</tr>
+<tr>
+<td>data.contentTableShowRows</td>
+<td>integer</td>
+<td>false</td>
+<td>show max rows, if row count more than max, should be fold, and plus an expand button. if not set, will show all rows</td>
+</tr>
+<tr>
+<td>data.contentBackgroundImage</td>
+<td>string</td>
+<td>false</td>
+<td>show background image at the content table area</td>
+</tr>
+<tr>
+<td>data.contentTable</td>
+<td>array[][Cell]</td>
+<td>false</td>
+<td>table layout, two-dimensional array of cell, cell data is any basic component</td>
+</tr>
+<tr>
+<td>data.footTableShowRows</td>
+<td>integer</td>
+<td>false</td>
+<td>show max rows, if row count more than max, should be fold, and plus an expand button. if not set, will show all rows</td>
+</tr>
+<tr>
+<td>data.footBackgroundImage</td>
+<td>string</td>
+<td>false</td>
+<td>show background image at the foot table area</td>
+</tr>
+<tr>
+<td>data.footTable</td>
+<td>array[][Cell]</td>
+<td>false</td>
+<td>same as contentTable, always not exists, unless contentTable can&apos;t support</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Introduce of cell in table layout</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Must Exists</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>rowSpan</td>
+<td>integer</td>
+<td>true</td>
+<td>span row count</td>
+</tr>
+<tr>
+<td>colSpan</td>
+<td>integer</td>
+<td>true</td>
+<td>span column count</td>
+</tr>
+<tr>
+<td>data</td>
+<td><a href="#basic-component">Basic Component</a></td>
+<td>true</td>
+<td>one Text / Image / Button</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>You can reference to some <a href="#template-1">Template Examples</a>.</strong></li>
+</ul>
+<h4 id="carousel">Carousel</h4>
+<p><img src="../assets/chatbot-03-clip_image007.png" alt="new carousel general"></p>
+<ul>
+<li>Type: carousel</li>
+<li>Json Structure<pre><code>  {
+    &quot;type&quot;: &quot;carousel&quot;,
+    &quot;title&quot;: &quot;optional, short bold text&quot;,
+    &quot;subTitle&quot;: &quot;optional, short gray text&quot;,
+    &quot;data&quot; : {
+       &quot;cards&quot;: [
+         {
+           // any component except carousel self and line flex
+         },
+         // more components
+       ]
+    }
+  }
+</code></pre></li>
+<li>Introduce</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Must Exists</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>string</td>
+<td>true</td>
+<td>carousel</td>
+</tr>
+<tr>
+<td>title</td>
+<td>string</td>
+<td>false</td>
+<td>short bold text</td>
+</tr>
+<tr>
+<td>subTitle</td>
+<td>string</td>
+<td>false</td>
+<td>short gray text</td>
+</tr>
+<tr>
+<td>data.cards</td>
+<td>array[<a href="#component">Component</a>]</td>
+<td>true</td>
+<td>array of any component, but not carousel and line flex</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>You can reference to some <a href="#carousel-1">Carousel Examples</a>.</strong></li>
+</ul>
+<p><em>Back to <a href="#table-of-contents">Table of Contents</a></em></p>
+<h2 id="special-messenger-component">Special Messenger Component</h2>
+<ul>
+<li><a href="#line-flex">LineFlex</a></li>
+<li><a href="#line-sticker">LineSticker</a></li>
+<li><a href="#lineworks-sticker">LineWorksSticker</a></li>
+</ul>
+<h3 id="line-flex">LINE Flex</h3>
+<p>To support <a href="https://developers.line.biz/en/reference/messaging-api/#flex-message" target="_blank">LINE Flex Message</a> json.</p>
+<ul>
+<li>Type: flex</li>
+<li>Json Structure<pre><code>  {
+    &quot;type&quot;: &quot;flex&quot;,
+    &quot;title&quot;: &quot;not used&quot;,
+    &quot;subTitle&quot;: &quot;required, alternative text&quot;,
+    &quot;data&quot; : {
+      // LINE Flex Message container object
+    }
+  }
+</code></pre></li>
+<li>Introduce</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Must Exists</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>string</td>
+<td>true</td>
+<td>flex</td>
+</tr>
+<tr>
+<td>title</td>
+<td>string</td>
+<td>true</td>
+<td>alternative text, show in chat list and push alert</td>
+</tr>
+<tr>
+<td>subTitle</td>
+<td>string</td>
+<td>false</td>
+<td>not used</td>
+</tr>
+<tr>
+<td>data</td>
+<td><a href="https://developers.line.biz/en/reference/messaging-api/#container" target="_blank">FlexMessageContainerObject</a></td>
+<td>true</td>
+<td>Flex Message container object, could copy json from <a href="https://developers.line.biz/console/fx/" target="_blank">Flex Message Simulator</a></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>You can reference to some <a href="#LINE-flex-1">Line Flex Examples</a>.</strong></li>
+</ul>
+<h3 id="line-sticker">Line Sticker</h3>
+<p>To support <a href="https://developers.line.biz/en/reference/messaging-api/#sticker-message" target="_blank">LINE Sitcker Message</a>.</p>
+<ul>
+<li>Type: line_sticker</li>
+<li>Json Structure<pre><code>  {
+    &quot;type&quot;: &quot;line_sticker&quot;,
+    &quot;data&quot; : {
+       &quot;packageId&quot;: &quot;packageId of LINE&quot;,
+       &quot;stickerId&quot;: &quot;stickerId of LINE&quot;
+    }
+  }
+</code></pre></li>
+<li>Introduce</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Must Exists</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>string</td>
+<td>true</td>
+<td>line_sticker</td>
+</tr>
+<tr>
+<td>data.packageId</td>
+<td>string</td>
+<td>true</td>
+<td>sticker&apos;s packageId of LINE&#xFF0C; refer to <a href="https://developers.line.biz/media/messaging-api/sticker_list.pdf" target="_blank">sticker list</a></td>
+</tr>
+<tr>
+<td>data.stickerId</td>
+<td>string</td>
+<td>true</td>
+<td>sticker&apos;s stickerId of LINE&#xFF0C; refer to <a href="https://developers.line.biz/media/messaging-api/sticker_list.pdf" target="_blank">sticker list</a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="lineworks-sticker">LineWorks Sticker</h3>
+<p>To support <a href="https://developers.worksmobile.com/kr/document/100500806" target="_blank">LINEWORKS Sitcker Message</a>.</p>
+<ul>
+<li>Type: lineworks_sticker</li>
+<li>Json Structure<pre><code>  {
+    &quot;type&quot;: &quot;lineworks_sticker&quot;,
+    &quot;data&quot; : {
+       &quot;packageId&quot;: &quot;packageId of LINEWORKS&quot;,
+       &quot;stickerId&quot;: &quot;stickerId of LINEWORKS&quot;
+    }
+  }
+</code></pre></li>
+<li>Introduce</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Must Exists</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>string</td>
+<td>true</td>
+<td>lineworks_sticker</td>
+</tr>
+<tr>
+<td>data.packageId</td>
+<td>string</td>
+<td>true</td>
+<td>sticker&apos;s packageId of LINEWORKS&#xFF0C; refer to <a href="https://static.worksmobile.net/static/wm/media/message-bot-api/line_works_sticker_list_new.pdf" target="_blank">sticker list</a></td>
+</tr>
+<tr>
+<td>data.stickerId</td>
+<td>string</td>
+<td>true</td>
+<td>sticker&apos;s stickerId of LINEWORKS&#xFF0C; refer to <a href="https://static.worksmobile.net/static/wm/media/message-bot-api/line_works_sticker_list_new.pdf" target="_blank">sticker list</a></td>
+</tr>
+</tbody>
+</table>
+<p><em>Back to <a href="#table-of-contents">Table of Contents</a></em></p>
+<h2 id="action">Action</h2>
+<p>Action is a common data for all basic components. define what will do when click on component.</p>
+<ul>
+<li><a href="#postback">Postback</a></li>
+<li><a href="#utterance">Utterance</a></li>
+<li><a href="#link">Link</a></li>
+<li><a href="#phone">Phone</a></li>
+<li><a href="#welcome">Welcome</a></li>
+</ul>
+<h3 id="postback">Postback</h3>
+<p>When click on component, will postback the postbackText to chatbot and show postback as user chat.</p>
+<ul>
+<li>Type: postback</li>
+<li>Json Structure<pre><code>  {
+    &quot;type&quot;: &quot;postback&quot;,
+    &quot;data&quot; : {
+      &quot;postback&quot; : &quot;text to show as user chat in messenger chat window&quot;
+      &quot;postbackFull&quot; : &quot;full postback content send to chatbot&quot;
+    }
+  }
+</code></pre></li>
+<li>Introduce</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Must Exists</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>string</td>
+<td>true</td>
+<td>postback</td>
+</tr>
+<tr>
+<td>data.postback</td>
+<td>string</td>
+<td>true</td>
+<td>text show as user chat, if send this field to chatbot, not affect previous features, but will not support some new features</td>
+</tr>
+<tr>
+<td>data.postbackFull</td>
+<td>string</td>
+<td>true</td>
+<td>postback full content send to chatbot</td>
+</tr>
+</tbody>
+</table>
+<h2 id="utterance">Utterance</h2>
+<p>When click on component, will postback a text to chatbot and show text as user chat.</p>
+<ul>
+<li>Type: utterance</li>
+<li>Json Structure<pre><code>  {
+    &quot;type&quot;: &quot;utterance&quot;,
+    &quot;data&quot; : {
+      &quot;utteranceId&quot; : 1,
+      &quot;text&quot; : &quot;text show in chat window&quot;,
+      &quot;postback&quot; : &quot;postback text&quot;
+    }
+  }
+</code></pre></li>
+<li>Introduce</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Must Exists</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>string</td>
+<td>true</td>
+<td>utterance</td>
+</tr>
+<tr>
+<td>data.utteranceId</td>
+<td>string</td>
+<td>true</td>
+<td></td>
+</tr>
+<tr>
+<td>data.text</td>
+<td>string</td>
+<td>true</td>
+<td>text show in chat window as user input</td>
+</tr>
+<tr>
+<td>data.postback</td>
+<td>string</td>
+<td>true</td>
+<td>postback text send to chatbot</td>
+</tr>
+</tbody>
+</table>
+<h3 id="link">Link</h3>
+<p>When click on component, will jump to a url.</p>
+<ul>
+<li>Type: link</li>
+<li>Json Structure<pre><code>  {
+    &quot;type&quot;: &quot;link&quot;,
+    &quot;data&quot; : {
+      &quot;url&quot; : &quot;http://www.ncloud.com&quot;,
+      &quot;mobileUrl&quot; : &quot;http://m.ncloud.com&quot;
+    }
+  }
+</code></pre></li>
+<li>Introduce</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Must Exists</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>string</td>
+<td>true</td>
+<td>postback</td>
+</tr>
+<tr>
+<td>data.url</td>
+<td>string</td>
+<td>true</td>
+<td>open url</td>
+</tr>
+<tr>
+<td>data.mobileUrl</td>
+<td>string</td>
+<td>false</td>
+<td>url for mobile device</td>
+</tr>
+</tbody>
+</table>
+<h3 id="phone">Phone</h3>
+<p>When click on component, will jump dial page. Maybe only support on mobile.</p>
+<ul>
+<li>Type: link</li>
+<li>Json Structure<pre><code>  {
+    &quot;type&quot;: &quot;phone&quot;,
+    &quot;data&quot; : {
+      &quot;number&quot; : &quot;400-1111-1111&quot;,
+      &quot;name&quot; : &quot;Customer service&quot;
+    }
+  }
+</code></pre></li>
+<li>Introduce</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Must Exists</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>string</td>
+<td>true</td>
+<td>phone</td>
+</tr>
+<tr>
+<td>data.number</td>
+<td>string</td>
+<td>true</td>
+<td>phone number</td>
+</tr>
+<tr>
+<td>data.name</td>
+<td>string</td>
+<td>false</td>
+<td>contact name</td>
+</tr>
+</tbody>
+</table>
+<p><em>Back to <a href="#table-of-contents">Table of Contents</a></em></p>
+<h3 id="welcome">Welcome</h3>
+<p>When click on component, will send an <a href="#open%20event">open event</a>.</p>
+<ul>
+<li>Type: welcome</li>
+<li>Json Structure<pre><code>  {
+    &quot;type&quot;: &quot;welcome&quot;,
+    &quot;data&quot; : {
+      &quot;postback&quot; : &quot;postback text, optional&quot;
+    }
+  }
+</code></pre></li>
+<li>Introduce</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Must Exists</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>string</td>
+<td>true</td>
+<td>welcome</td>
+</tr>
+<tr>
+<td>data.postback</td>
+<td>string</td>
+<td>false</td>
+<td>postback text send to chatbot in open event</td>
+</tr>
+</tbody>
+</table>
+<p><em>Back to <a href="#table-of-contents">Table of Contents</a></em></p>
+<h2 id="quick-button">Quick Button</h2>
+<p>A group fixed buttons at the bottom of the chat window.</p>
+<ul>
+<li><strong>You can reference to some <a href="#quick-buttons">Quick Buttons Examples</a>.</strong></li>
+</ul>
+<h2 id="persistent-menu">Persistent Menu</h2>
+<p>The fixed menu, show when user touch menu button on chat bar. Always contains in welcome response. Not changes utils another response contains persistentMenu content.</p>
+<p><img src="../assets/chatbot-03-clip_image023.png" alt="image"></p>
+<p>Persistent menu is a <a href="https://oss.navercorp.com/chatbot/chatbot-ncp-api/wiki/chatbot-custom-api-specification-v2#template" target="_blank">Template Component</a>, with these definition:</p>
+<ul>
+<li>title will show on the chat bar.</li>
+<li>no cover, cover should be discard.</li>
+<li>no foot table, fields relate to foot area should be discard.</li>
+<li>contentBackgroundImage is the background, if the components in the contentTable have image, will cover the background.</li>
+</ul>
+<h2 id="response-examples">Response Examples</h2>
+<h3 id="text">Text</h3>
+<h4 id="only-normal-text">only normal text</h4>
+<pre><code>{
+  &quot;version&quot;: &quot;v2&quot;,
+  &quot;userId&quot;: &quot;U47b00b58c90f8e47428af8b7bddcda3d&quot;,
+  &quot;sessionId&quot;: &quot;34a59946-5dcb-4b72-9b63-a773c659702e&quot;,
+  &quot;timestamp&quot;: 12345678,
+  &quot;bubbles&quot;: [
+    {
+      &quot;type&quot;: &quot;text&quot;,
+      &quot;data&quot; : {
+        &quot;description&quot; : &quot;description, optional: only description&quot;
+      }
+    }
+  ],
+  &quot;event&quot;: &quot;send&quot;
+}
+</code></pre><h4 id="full-style-with-postback-action">full style with postback action</h4>
+<p><img src="../assets/chatbot-03-clip_image008.png" alt="image"></p>
+<pre><code>{
+  &quot;version&quot;: &quot;v2&quot;,
+  &quot;userId&quot;: &quot;U47b00b58c90f8e47428af8b7bddcda3d&quot;,
+  &quot;sessionId&quot;: &quot;34a59946-5dcb-4b72-9b63-a773c659702e&quot;,
+  &quot;timestamp&quot;: 12345678,
+  &quot;bubbles&quot;: [
+    {
+      &quot;type&quot;: &quot;text&quot;,
+      &quot;title&quot;: &quot;title, optional&quot;,
+      &quot;subTitle&quot;: &quot;subTitle, optional&quot;,
+      &quot;data&quot; : {
+        &quot;description&quot; : &quot;description, optional: full style, optional&quot;,
+        &quot;url&quot; : &quot;http://www.ncloud.com&quot;,
+        &quot;urlAlias&quot; : &quot;urlAlias, optional&quot;,
+        &quot;action&quot; : {
+          &quot;type&quot;: &quot;postback&quot;,
+          &quot;data&quot; : {
+            &quot;postback&quot; : &quot;Hello&quot;
+          }
+        }
+      }
+    }
+  ],
+  &quot;event&quot;: &quot;send&quot;
+}
+</code></pre><p><em>Back to <a href="#table-of-contents">Table of Contents</a></em></p>
+<h3 id="image">Image</h3>
+<h4 id="only-image-at-the-bottom-with-description">only image at the bottom, with description</h4>
+<p><img src="../assets/chatbot-03-clip_image009.png" alt="image"></p>
+<pre><code>{
+  &quot;version&quot;: &quot;v2&quot;,
+  &quot;userId&quot;: &quot;U47b00b58c90f8e47428af8b7bddcda3d&quot;,
+  &quot;sessionId&quot;: &quot;34a59946-5dcb-4b72-9b63-a773c659702e&quot;,
+  &quot;timestamp&quot;: 12345678,
+  &quot;bubbles&quot;: [
+    {
+      &quot;type&quot;: &quot;image&quot;,
+      &quot;data&quot; : {
+        &quot;imageUrl&quot; : &quot;https://ssl.pstatic.net/CloudFunctions.png&quot;,
+        &quot;imagePosition&quot; : &quot;bottom&quot;,
+        &quot;description&quot; : &quot;description, optional: imagePosition is bottom,only have description&quot;
+      }
+    }
+  ],
+  &quot;event&quot;: &quot;send&quot;
+}
+</code></pre><h4 id="full-style-image-on-the-top-with-link-action">full style image on the top with link action</h4>
+<p><img src="../assets/chatbot-03-clip_image010.png" alt="image"></p>
+<pre><code>{
+  &quot;version&quot;: &quot;v2&quot;,
+  &quot;userId&quot;: &quot;U47b00b58c90f8e47428af8b7bddcda3d&quot;,
+  &quot;sessionId&quot;: &quot;34a59946-5dcb-4b72-9b63-a773c659702e&quot;,
+  &quot;timestamp&quot;: 12345678,
+  &quot;bubbles&quot;: [
+    {
+      &quot;type&quot;: &quot;image&quot;,
+      &quot;title&quot;: &quot;title, optional&quot;,
+      &quot;subTitle&quot;: &quot;subTitle, optional&quot;,
+      &quot;data&quot; : {
+        &quot;imageUrl&quot; : &quot;https://ssl.pstatic.net/CloudFunctions.png&quot;,
+        &quot;alt&quot; : &quot;alt, hover, optional&quot;,
+        &quot;description&quot; : &quot;description, optional: imagePosition is top, full style&quot;,
+        &quot;url&quot; : &quot;http://www.ncloud.com&quot;,
+        &quot;urlAlias&quot; : &quot;urlAlias, optional&quot;,
+        &quot;action&quot; : {
+          &quot;type&quot;: &quot;link&quot;,
+          &quot;data&quot; : {
+            &quot;url&quot; : &quot;http://www.ncloud.com&quot;,
+            &quot;mobileUrl&quot; : &quot;http://m.ncloud.com&quot;
+          }
+        }
+      }
+    }
+  ],
+  &quot;event&quot;: &quot;send&quot;
+}
+</code></pre><p><em>Back to <a href="#table-of-contents">Table of Contents</a></em></p>
+<h3 id="template">Template</h3>
+<h4 id="text--buttons">Text + Buttons</h4>
+<p><img src="../assets/chatbot-03-clip_image011.png" alt="image"></p>
+<pre><code>{
+  &quot;version&quot;: &quot;v2&quot;,
+  &quot;userId&quot;: &quot;U47b00b58c90f8e47428af8b7bddcda3d&quot;,
+  &quot;sessionId&quot;: &quot;34a59946-5dcb-4b72-9b63-a773c659702e&quot;,
+  &quot;timestamp&quot;: 12345678,
+  &quot;bubbles&quot;: [
+    {
+      &quot;type&quot;: &quot;template&quot;,
+      &quot;data&quot; : {
+        &quot;cover&quot;: {
+          &quot;type&quot; : &quot;text&quot;,
+          &quot;title&quot; : &quot;title, optional&quot;,
+          &quot;subTitle&quot; : &quot;subTitle, optional&quot;,
+          &quot;data&quot; : {
+            &quot;description&quot; : &quot;description, optional: text full style&quot;,
+            &quot;url&quot; : &quot;http://www.ncloud.com&quot;,
+            &quot;urlAlias&quot; : &quot;urlAlias, optional&quot;
+          }
+        },
+        &quot;contentTable&quot;:[
+          [
+            {
+              &quot;colSpan&quot; : 1,
+              &quot;rowSpan&quot; : 1,
+              &quot;data&quot; : {
+                &quot;type&quot;: &quot;button&quot;,
+                &quot;title&quot;: &quot;basic button, a link&quot;,
+                &quot;data&quot; : {
+                  &quot;type&quot;: &quot;basic&quot;,
+                  &quot;action&quot;: {
+                    &quot;type&quot;: &quot;link&quot;,
+                    &quot;data&quot; : {
+                      &quot;url&quot; : &quot;http://www.ncloud.com&quot;
+                    }
+                  }
+                }
+              }
+            }
+          ],
+          [
+            {
+              &quot;colSpan&quot; : 1,
+              &quot;rowSpan&quot; : 1,
+              &quot;data&quot; : {
+                &quot;type&quot;: &quot;button&quot;,
+                &quot;title&quot;: &quot;basic button, a link&quot;,
+                &quot;data&quot; : {
+                  &quot;type&quot;: &quot;basic&quot;,
+                  &quot;action&quot;: {
+                    &quot;type&quot;: &quot;link&quot;,
+                    &quot;data&quot; : {
+                      &quot;url&quot; : &quot;http://www.ncloud.com&quot;
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        ]
+      }
+    }
+  ],
+  &quot;event&quot;: &quot;send&quot;
+}
+</code></pre><p><em>Back to <a href="#table-of-contents">Table of Contents</a></em></p>
+<h4 id="image--buttons">Image + Buttons</h4>
+<p><img src="../assets/chatbot-03-clip_image012.png" alt="image"></p>
+<pre><code>{
+  &quot;version&quot;: &quot;v2&quot;,
+  &quot;userId&quot;: &quot;U47b00b58c90f8e47428af8b7bddcda3d&quot;,
+  &quot;sessionId&quot;: &quot;34a59946-5dcb-4b72-9b63-a773c659702e&quot;,
+  &quot;timestamp&quot;: 12345678,
+  &quot;bubbles&quot;: [
+    {
+      &quot;type&quot;: &quot;template&quot;,
+      &quot;data&quot; : {
+        &quot;cover&quot;: {
+          &quot;type&quot;: &quot;image&quot;,
+          &quot;title&quot;: &quot;title, optional&quot;,
+          &quot;subTitle&quot;: &quot;subTitle, optional&quot;,
+          &quot;data&quot; : {
+            &quot;imageUrl&quot; : &quot;https://ssl.pstatic.net/CloudFunctions.png&quot;,
+            &quot;alt&quot; : &quot;alt, hover, optional&quot;,
+            &quot;description&quot; : &quot;description, optional: imagePosition is top full style&quot;,
+            &quot;url&quot; : &quot;http://www.ncloud.com&quot;,
+            &quot;urlAlias&quot; : &quot;urlAlias, optional&quot;
+          }
+        },
+        &quot;contentTable&quot;:[
+          [
+            {
+              &quot;colSpan&quot; : 1,
+              &quot;rowSpan&quot; : 1,
+              &quot;data&quot; : {
+                &quot;type&quot;: &quot;button&quot;,
+                &quot;title&quot;: &quot;basic button, a link&quot;,
+                &quot;data&quot; : {
+                  &quot;type&quot;: &quot;basic&quot;,
+                  &quot;action&quot;: {
+                    &quot;type&quot;: &quot;link&quot;,
+                    &quot;data&quot; : {
+                      &quot;url&quot; : &quot;http://www.ncloud.com&quot;
+                    }
+                  }
+                }
+              }
+            }
+          ],
+          [
+            {
+              &quot;colSpan&quot; : 1,
+              &quot;rowSpan&quot; : 1,
+              &quot;data&quot; : {
+                &quot;type&quot;: &quot;button&quot;,
+                &quot;title&quot;: &quot;basic button, a link&quot;,
+                &quot;data&quot; : {
+                  &quot;type&quot;: &quot;basic&quot;,
+                  &quot;action&quot;: {
+                    &quot;type&quot;: &quot;link&quot;,
+                    &quot;data&quot; : {
+                      &quot;url&quot; : &quot;http://www.ncloud.com&quot;
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        ]
+      }
+    }
+  ],
+  &quot;event&quot;: &quot;send&quot;
+}
+</code></pre><p><em>Back to <a href="#table-of-contents">Table of Contents</a></em></p>
+<h4 id="image-list">Image List</h4>
+<p><img src="../assets/chatbot-03-clip_image013.png" alt="image"></p>
+<pre><code>{
+  &quot;version&quot;: &quot;v2&quot;,
+  &quot;userId&quot;: &quot;U47b00b58c90f8e47428af8b7bddcda3d&quot;,
+  &quot;sessionId&quot;: &quot;34a59946-5dcb-4b72-9b63-a773c659702e&quot;,
+  &quot;timestamp&quot;: 12345678,
+  &quot;bubbles&quot;: [
+    {
+      &quot;type&quot;: &quot;template&quot;,
+      &quot;data&quot; : {
+        &quot;cover&quot;: {
+          &quot;type&quot;: &quot;text&quot;,
+          &quot;data&quot; : {
+            &quot;description&quot; : &quot;description, optional: only text style&quot;
+          }
+        },
+        &quot;contentTableShowRows&quot; : 3,
+        &quot;contentTable&quot;:[
+          [
+            {
+              &quot;colSpan&quot; : 1,
+              &quot;rowSpan&quot; : 1,
+              &quot;data&quot; : {
+                &quot;type&quot;: &quot;image&quot;,
+                &quot;title&quot;: &quot;title, optional&quot;,
+                &quot;subTitle&quot;: &quot;subTitle, optional, no description&quot;,
+                &quot;data&quot; : {
+                  &quot;imagePosition&quot; : &quot;left&quot;,
+                  &quot;imageUrl&quot; : &quot;https://ssl.pstatic.net/CloudFunctions.png&quot;,
+                  &quot;action&quot;: {
+                    &quot;type&quot;: &quot;link&quot;,
+                    &quot;data&quot; : {
+                      &quot;url&quot; : &quot;http://www.ncloud.com&quot;
+                    }
+                  }
+                }
+              }
+            }
+          ],
+          [
+            {
+              &quot;colSpan&quot; : 1,
+              &quot;rowSpan&quot; : 1,
+              &quot;data&quot; : {
+                &quot;type&quot;: &quot;image&quot;,
+                &quot;title&quot;: &quot;title, optional&quot;,
+                &quot;subTitle&quot;: &quot;subTitle, optional, no description&quot;,
+                &quot;data&quot; : {
+                  &quot;imagePosition&quot; : &quot;left&quot;,
+                  &quot;imageUrl&quot; : &quot;https://ssl.pstatic.net/CloudFunctions.png&quot;,
+                  &quot;action&quot;: {
+                    &quot;type&quot;: &quot;link&quot;,
+                    &quot;data&quot; : {
+                      &quot;url&quot; : &quot;http://www.ncloud.com&quot;
+                    }
+                  }
+                }
+              }
+            }
+          ],
+          [
+            {
+              &quot;colSpan&quot; : 1,
+              &quot;rowSpan&quot; : 1,
+              &quot;data&quot; : {
+                &quot;type&quot;: &quot;image&quot;,
+                &quot;title&quot;: &quot;title, optional&quot;,
+                &quot;subTitle&quot;: &quot;subTitle, optional, no description&quot;,
+                &quot;data&quot; : {
+                  &quot;imagePosition&quot; : &quot;left&quot;,
+                  &quot;imageUrl&quot; : &quot;https://ssl.pstatic.net/CloudFunctions.png&quot;,
+                  &quot;action&quot;: {
+                    &quot;type&quot;: &quot;link&quot;,
+                    &quot;data&quot; : {
+                      &quot;url&quot; : &quot;http://www.ncloud.com&quot;
+                    }
+                  }
+                }
+              }
+            }
+          ],
+          [
+            {
+              &quot;colSpan&quot; : 1,
+              &quot;rowSpan&quot; : 1,
+              &quot;data&quot; : {
+                &quot;type&quot;: &quot;image&quot;,
+                &quot;title&quot;: &quot;title, optional&quot;,
+                &quot;subTitle&quot;: &quot;subTitle, optional, no description&quot;,
+                &quot;data&quot; : {
+                  &quot;imagePosition&quot; : &quot;left&quot;,
+                  &quot;imageUrl&quot; : &quot;https://ssl.pstatic.net/CloudFunctions.png&quot;,
+                  &quot;action&quot;: {
+                    &quot;type&quot;: &quot;link&quot;,
+                    &quot;data&quot; : {
+                      &quot;url&quot; : &quot;http://www.ncloud.com&quot;
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        ]
+      }
+    }
+  ],
+  &quot;event&quot;: &quot;send&quot;
+}
+</code></pre><p><em>Back to <a href="#table-of-contents">Table of Contents</a></em></p>
+<h3 id="minibuttons">MiniButtons</h3>
+<p><img src="../assets/chatbot-03-clip_image014.png" alt="image"></p>
+<pre><code>{
+  &quot;version&quot;: &quot;v2&quot;,
+  &quot;userId&quot;: &quot;U47b00b58c90f8e47428af8b7bddcda3d&quot;,
+  &quot;sessionId&quot;: &quot;34a59946-5dcb-4b72-9b63-a773c659702e&quot;,
+  &quot;timestamp&quot;: 12345678,
+  &quot;bubbles&quot;: [
+    {
+      &quot;type&quot;: &quot;template&quot;,
+      &quot;data&quot; : {
+        &quot;cover&quot;: {
+          &quot;type&quot;: &quot;text&quot;,
+          &quot;title&quot; : &quot;title, optional&quot;,
+          &quot;subTitle&quot; : &quot;subTitle, optional&quot;,
+          &quot;data&quot; : {
+            &quot;description&quot; : &quot;description, optional: text full style&quot;,
+            &quot;url&quot; : &quot;http://www.ncloud.com&quot;,
+            &quot;urlAlias&quot; : &quot;urlAlias, optional&quot;
+          }
+        },
+        &quot;contentTable&quot;:[
+          [
+            {
+              &quot;colSpan&quot; : 1,
+              &quot;rowSpan&quot; : 1,
+              &quot;data&quot; : {
+                &quot;type&quot;: &quot;button&quot;,
+                &quot;title&quot;: &quot;basic button, a link&quot;,
+                &quot;data&quot; : {
+                  &quot;type&quot;: &quot;basic&quot;,
+                  &quot;action&quot;: {
+                    &quot;type&quot;: &quot;link&quot;,
+                    &quot;data&quot; : {
+                      &quot;url&quot; : &quot;http://www.ncloud.com&quot;
+                    }
+                  }
+                }
+              }
+            },
+            {
+              &quot;colSpan&quot; : 1,
+              &quot;rowSpan&quot; : 1,
+              &quot;data&quot; : {
+                &quot;type&quot;: &quot;button&quot;,
+                &quot;title&quot;: &quot;basic button, a link&quot;,
+                &quot;data&quot; : {
+                  &quot;type&quot;: &quot;basic&quot;,
+                  &quot;action&quot;: {
+                    &quot;type&quot;: &quot;link&quot;,
+                    &quot;data&quot; : {
+                      &quot;url&quot; : &quot;http://www.ncloud.com&quot;
+                    }
+                  }
+                }
+              }
+            }
+          ],
+          [
+            {
+              &quot;colSpan&quot; : 1,
+              &quot;rowSpan&quot; : 1,
+              &quot;data&quot; : {
+                &quot;type&quot;: &quot;button&quot;,
+                &quot;title&quot;: &quot;basic button, a link&quot;,
+                &quot;data&quot; : {
+                  &quot;type&quot;: &quot;basic&quot;,
+                  &quot;action&quot;: {
+                    &quot;type&quot;: &quot;link&quot;,
+                    &quot;data&quot; : {
+                      &quot;url&quot; : &quot;http://www.ncloud.com&quot;
+                    }
+                  }
+                }
+              }
+            },
+            {
+              &quot;colSpan&quot; : 1,
+              &quot;rowSpan&quot; : 1,
+              &quot;data&quot; : {
+                &quot;type&quot;: &quot;button&quot;,
+                &quot;title&quot;: &quot;basic button, a link&quot;,
+                &quot;data&quot; : {
+                  &quot;type&quot;: &quot;basic&quot;,
+                  &quot;action&quot;: {
+                    &quot;type&quot;: &quot;link&quot;,
+                    &quot;data&quot; : {
+                      &quot;url&quot; : &quot;http://www.ncloud.com&quot;
+                    }
+                  }
+                }
+              }
+            }
+          ],
+          [
+            {
+              &quot;colSpan&quot; : 2,
+              &quot;rowSpan&quot; : 1,
+              &quot;data&quot; : {
+                &quot;type&quot;: &quot;button&quot;,
+                &quot;title&quot;: &quot;basic button, a link&quot;,
+                &quot;data&quot; : {
+                  &quot;type&quot;: &quot;basic&quot;,
+                  &quot;action&quot;: {
+                    &quot;type&quot;: &quot;link&quot;,
+                    &quot;data&quot; : {
+                      &quot;url&quot; : &quot;http://www.ncloud.com&quot;
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        ]
+      }
+    }
+  ],
+  &quot;event&quot;: &quot;send&quot;
+}
+</code></pre><p><em>Back to <a href="#table-of-contents">Table of Contents</a></em></p>
+<h4 id="imagebuttons">ImageButtons</h4>
+<p><img src="../assets/chatbot-03-clip_image015.png" alt="image"></p>
+<pre><code>{
+  &quot;version&quot;: &quot;v2&quot;,
+  &quot;userId&quot;: &quot;U47b00b58c90f8e47428af8b7bddcda3d&quot;,
+  &quot;sessionId&quot;: &quot;34a59946-5dcb-4b72-9b63-a773c659702e&quot;,
+  &quot;timestamp&quot;: 12345678,
+  &quot;bubbles&quot;: [
+    {
+      &quot;type&quot;: &quot;template&quot;,
+      &quot;data&quot; : {
+        &quot;cover&quot;: {
+          &quot;type&quot;: &quot;image&quot;,
+          &quot;data&quot; : {
+            &quot;imageUrl&quot; : &quot;https://ssl.pstatic.net/CloudFunctions.png&quot;,
+            &quot;imagePosition&quot; : &quot;bottom&quot;,
+            &quot;description&quot; : &quot;description, optional: imagePosition is bottom, no title&quot;,
+            &quot;url&quot; : &quot;http://www.ncloud.com&quot;,
+            &quot;urlAlias&quot; : &quot;urlAlias, optional&quot;
+          }
+        },
+        &quot;contentTable&quot;:[
+          [
+            {
+              &quot;colSpan&quot; : 1,
+              &quot;rowSpan&quot; : 1,
+              &quot;data&quot; : {
+                &quot;type&quot;: &quot;button&quot;,
+                &quot;title&quot;: &quot;action is link&quot;,
+                &quot;data&quot; : {
+                  &quot;type&quot;: &quot;imageButton&quot;,
+                  &quot;iconUrl&quot;: &quot;https://ssl.pstatic.net/CloudFunctions.png&quot;,
+                  &quot;action&quot;: {
+                    &quot;type&quot;: &quot;link&quot;,
+                    &quot;data&quot; : {
+                      &quot;url&quot; : &quot;http://www.ncloud.com&quot;
+                    }
+                  }
+                }
+              }
+            },
+            {
+              &quot;colSpan&quot; : 1,
+              &quot;rowSpan&quot; : 1,
+              &quot;data&quot; : {
+                &quot;type&quot;: &quot;button&quot;,
+                &quot;data&quot; : {
+                  &quot;type&quot;: &quot;imageButton&quot;,
+                  &quot;iconUrl&quot;: &quot;https://ssl.pstatic.net/CloudFunctions.png&quot;,
+                  &quot;action&quot;: {
+                    &quot;type&quot;: &quot;link&quot;,
+                    &quot;data&quot; : {
+                      &quot;url&quot; : &quot;http://www.ncloud.com&quot;
+                    }
+                  }
+                }
+              }
+            },
+            {
+              &quot;colSpan&quot; : 1,
+              &quot;rowSpan&quot; : 2,
+              &quot;data&quot; : {
+                &quot;type&quot;: &quot;button&quot;,
+                &quot;data&quot; : {
+                  &quot;type&quot;: &quot;imageButton&quot;,
+                  &quot;iconUrl&quot;: &quot;https://ssl.pstatic.net/CloudFunctions.png&quot;,
+                  &quot;action&quot;: {
+                    &quot;type&quot;: &quot;link&quot;,
+                    &quot;data&quot; : {
+                      &quot;url&quot; : &quot;http://www.ncloud.com&quot;
+                    }
+                  }
+                }
+              }
+            }
+          ],
+          [
+            {
+              &quot;colSpan&quot; : 2,
+              &quot;rowSpan&quot; : 1,
+              &quot;data&quot; : {
+                &quot;type&quot;: &quot;button&quot;,
+                &quot;title&quot;: &quot;action is link&quot;,
+                &quot;data&quot; : {
+                  &quot;type&quot;: &quot;imageButton&quot;,
+                  &quot;iconUrl&quot;: &quot;https://ssl.pstatic.net/CloudFunctions.png&quot;,
+                  &quot;action&quot;: {
+                    &quot;type&quot;: &quot;link&quot;,
+                    &quot;data&quot; : {
+                      &quot;url&quot; : &quot;http://www.ncloud.com&quot;
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        ]
+      }
+    }
+  ],
+  &quot;event&quot;: &quot;send&quot;
+}
+</code></pre><p><em>Back to <a href="#table-of-contents">Table of Contents</a></em></p>
+<h3 id="carousel">Carousel</h3>
+<h4 id="only-images">only images</h4>
+<p><img src="../assets/chatbot-03-clip_image016.png" alt="image"></p>
+<pre><code>{
+  &quot;version&quot;: &quot;v2&quot;,
+  &quot;userId&quot;: &quot;U47b00b58c90f8e47428af8b7bddcda3d&quot;,
+  &quot;sessionId&quot;: &quot;34a59946-5dcb-4b72-9b63-a773c659702e&quot;,
+  &quot;timestamp&quot;: 12345678,
+  &quot;bubbles&quot;: [
+    {
+      &quot;type&quot;: &quot;carousel&quot;,
+      &quot;data&quot; : {
+         &quot;cards&quot;: [
+            {
+              &quot;type&quot;: &quot;image&quot;,
+              &quot;title&quot;: &quot;title, optional&quot;,
+              &quot;subTitle&quot;: &quot;subTitle, optional&quot;,
+              &quot;data&quot; : {
+                &quot;imageUrl&quot; : &quot;https://ssl.pstatic.net/CloudFunctions.png&quot;,
+                &quot;description&quot; : &quot;description, optional: imagePosition is top full style&quot;,
+                &quot;url&quot; : &quot;http://www.ncloud.com&quot;,
+                &quot;urlAlias&quot; : &quot;urlAlias, optional&quot;
+              }
+            },
+            {
+              &quot;type&quot;: &quot;image&quot;,
+              &quot;title&quot;: &quot;title, optional&quot;,
+              &quot;subTitle&quot;: &quot;subTitle, optional&quot;,
+              &quot;data&quot; : {
+                &quot;imageUrl&quot; : &quot;https://ssl.pstatic.net/CloudFunctions.png&quot;,
+                &quot;description&quot; : &quot;description, optional: imagePosition is top full style&quot;,
+                &quot;url&quot; : &quot;http://www.ncloud.com&quot;,
+                &quot;urlAlias&quot; : &quot;urlAlias, optional&quot;
+              }
+            }
+         ]
+      }
+    }
+  ],
+  &quot;event&quot;: &quot;send&quot;
+}
+</code></pre><h4 id="template-with-image--buttons">template with image + buttons</h4>
+<p><img src="../assets/chatbot-03-clip_image017.png" alt="image"></p>
+<pre><code>{
+  &quot;version&quot;: &quot;v2&quot;,
+  &quot;userId&quot;: &quot;U47b00b58c90f8e47428af8b7bddcda3d&quot;,
+  &quot;sessionId&quot;: &quot;34a59946-5dcb-4b72-9b63-a773c659702e&quot;,
+  &quot;timestamp&quot;: 12345678,
+  &quot;bubbles&quot;: [
+    {
+      &quot;type&quot;: &quot;carousel&quot;,
+      &quot;data&quot; : {
+         &quot;cards&quot;: [
+            {
+              &quot;type&quot;: &quot;template&quot;,
+              &quot;data&quot; : {
+                &quot;cover&quot;: {
+                  &quot;type&quot;: &quot;image&quot;,
+                  &quot;title&quot;: &quot;title, optional&quot;,
+                  &quot;subTitle&quot;: &quot;subTitle, optional&quot;,
+                  &quot;data&quot; : {
+                    &quot;imageUrl&quot; : &quot;https://ssl.pstatic.net/CloudFunctions.png&quot;,
+                    &quot;description&quot; : &quot;description, optional: imagePosition is top full style&quot;,
+                    &quot;url&quot; : &quot;http://www.ncloud.com&quot;,
+                    &quot;urlAlias&quot; : &quot;urlAlias, optional&quot;
+                  }
+                },
+                &quot;contentTable&quot;:[
+                  [
+                    {
+                      &quot;colSpan&quot; : 1,
+                      &quot;rowSpan&quot; : 1,
+                      &quot;data&quot; : {
+                        &quot;type&quot;: &quot;button&quot;,
+                        &quot;title&quot;: &quot;basic button, a link&quot;,
+                        &quot;data&quot; : {
+                          &quot;type&quot;: &quot;basic&quot;,
+                          &quot;action&quot;: {
+                            &quot;type&quot;: &quot;link&quot;,
+                            &quot;data&quot; : {
+                              &quot;url&quot; : &quot;http://www.ncloud.com&quot;
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ],
+                  [
+                    {
+                      &quot;colSpan&quot; : 1,
+                      &quot;rowSpan&quot; : 1,
+                      &quot;data&quot; : {
+                        &quot;type&quot;: &quot;button&quot;,
+                        &quot;title&quot;: &quot;basic button, a link&quot;,
+                        &quot;data&quot; : {
+                          &quot;type&quot;: &quot;basic&quot;,
+                          &quot;action&quot;: {
+                            &quot;type&quot;: &quot;link&quot;,
+                            &quot;data&quot; : {
+                              &quot;url&quot; : &quot;http://www.ncloud.com&quot;
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                ]
+              }
+            },
+            {
+              &quot;type&quot;: &quot;template&quot;,
+              &quot;data&quot; : {
+                &quot;cover&quot;: {
+                  &quot;type&quot;: &quot;image&quot;,
+                  &quot;title&quot;: &quot;title, optional&quot;,
+                  &quot;subTitle&quot;: &quot;subTitle, optional&quot;,
+                  &quot;data&quot; : {
+                    &quot;imageUrl&quot; : &quot;https://ssl.pstatic.net/CloudFunctions.png&quot;,
+                    &quot;alt&quot; : &quot;alt, hover, optional&quot;,
+                    &quot;description&quot; : &quot;description, optional: imagePosition is top full style&quot;,
+                    &quot;url&quot; : &quot;http://www.ncloud.com&quot;,
+                    &quot;urlAlias&quot; : &quot;urlAlias, optional&quot;
+                  }
+                },
+                &quot;contentTable&quot;:[
+                  [
+                    {
+                      &quot;colSpan&quot; : 1,
+                      &quot;rowSpan&quot; : 1,
+                      &quot;data&quot; : {
+                        &quot;type&quot;: &quot;button&quot;,
+                        &quot;title&quot;: &quot;basic button, a link&quot;,
+                        &quot;data&quot; : {
+                          &quot;type&quot;: &quot;basic&quot;,
+                          &quot;action&quot;: {
+                            &quot;type&quot;: &quot;link&quot;,
+                            &quot;data&quot; : {
+                              &quot;url&quot; : &quot;http://www.ncloud.com&quot;
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ],
+                  [
+                    {
+                      &quot;colSpan&quot; : 1,
+                      &quot;rowSpan&quot; : 1,
+                      &quot;data&quot; : {
+                        &quot;type&quot;: &quot;button&quot;,
+                        &quot;title&quot;: &quot;basic button, a link&quot;,
+                        &quot;data&quot; : {
+                          &quot;type&quot;: &quot;basic&quot;,
+                          &quot;action&quot;: {
+                            &quot;type&quot;: &quot;link&quot;,
+                            &quot;data&quot; : {
+                              &quot;url&quot; : &quot;http://www.ncloud.com&quot;
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                ]
+              }
+            }
+         ]
+      }
+    }
+  ],
+  &quot;event&quot;: &quot;send&quot;
+}
+</code></pre><p><em>Back to <a href="#table-of-contents">Table of Contents</a></em></p>
+<h3 id="line-flex">LINE Flex</h3>
+<p><img src="../assets/chatbot-03-clip_image019.png" alt="image"></p>
+<pre><code>{
+  &quot;version&quot;: &quot;v2&quot;,
+  &quot;userId&quot;: &quot;U47b00b58c90f8e47428af8b7bddcda3d&quot;,
+  &quot;sessionId&quot;: &quot;34a59946-5dcb-4b72-9b63-a773c659702e&quot;,
+  &quot;timestamp&quot;: 12345678,
+  &quot;bubbles&quot;: [
+    {
+      &quot;type&quot;: &quot;flex&quot;,
+      &quot;title&quot;: &quot;this is a flex message&quot;,
+      &quot;data&quot; : {
+        &quot;type&quot;: &quot;bubble&quot;,
+        &quot;hero&quot;: {
+          &quot;type&quot;: &quot;image&quot;,
+          &quot;url&quot;: &quot;https://scdn.line-apps.com/n/channel_devcenter/img/fx/01_1_cafe.png&quot;,
+          &quot;size&quot;: &quot;full&quot;,
+          &quot;aspectRatio&quot;: &quot;20:13&quot;,
+          &quot;aspectMode&quot;: &quot;cover&quot;
+        },
+        &quot;body&quot;: {
+          &quot;type&quot;: &quot;box&quot;,
+          &quot;layout&quot;: &quot;vertical&quot;,
+          &quot;contents&quot;: [
+            {
+              &quot;type&quot;: &quot;text&quot;,
+              &quot;text&quot;: &quot;Brown Cafe&quot;,
+              &quot;weight&quot;: &quot;bold&quot;,
+              &quot;size&quot;: &quot;xl&quot;
+            }
+          ]
+        },
+        &quot;footer&quot;: {
+          &quot;type&quot;: &quot;box&quot;,
+          &quot;layout&quot;: &quot;vertical&quot;,
+          &quot;spacing&quot;: &quot;sm&quot;,
+          &quot;contents&quot;: [
+            {
+              &quot;type&quot;: &quot;button&quot;,
+              &quot;style&quot;: &quot;link&quot;,
+              &quot;height&quot;: &quot;sm&quot;,
+              &quot;action&quot;: {
+                &quot;type&quot;: &quot;uri&quot;,
+                &quot;label&quot;: &quot;CALL&quot;,
+                &quot;uri&quot;: &quot;https://linecorp.com&quot;
+              }
+            },
+            {
+              &quot;type&quot;: &quot;spacer&quot;,
+              &quot;size&quot;: &quot;sm&quot;
+            }
+          ],
+          &quot;flex&quot;: 0
+        }
+      }
+    }
+  ],
+  &quot;event&quot;: &quot;send&quot;
+}
+</code></pre><h3 id="quick-buttons">Quick Buttons</h3>
+<p><img src="../assets/chatbot-03-clip_image018.png" alt="image"></p>
+<pre><code>{
+  &quot;version&quot;: &quot;v2&quot;,
+  &quot;userId&quot;: &quot;U47b00b58c90f8e47428af8b7bddcda3d&quot;,
+  &quot;sessionId&quot;: &quot;34a59946-5dcb-4b72-9b63-a773c659702e&quot;,
+  &quot;timestamp&quot;: 12345678,
+  &quot;quickButtons&quot;: [
+    {
+      &quot;type&quot;: &quot;button&quot;,
+      &quot;title&quot;: &quot;no icon&quot;,
+      &quot;data&quot; : {
+        &quot;type&quot;: &quot;basic&quot;,
+        &quot;action&quot;: {
+          &quot;type&quot;: &quot;postback&quot;,
+          &quot;data&quot; : {
+            &quot;postback&quot; : &quot;hello&quot;
+          }
+        }
+      }
+    },
+    {
+      &quot;type&quot;: &quot;button&quot;,
+      &quot;title&quot;: &quot;phone&quot;,
+      &quot;data&quot; : {
+        &quot;type&quot;: &quot;basic&quot;,
+        &quot;iconUrl&quot; : &quot;https://ssl.pstatic.net/phone.png&quot;,
+        &quot;action&quot;: {
+          &quot;type&quot;: &quot;phone&quot;,
+          &quot;data&quot; : {
+            &quot;number&quot; : &quot;400-1111-1111&quot;
+          }
+        }
+      }
+    },
+    {
+      &quot;type&quot;: &quot;button&quot;,
+      &quot;title&quot;: &quot;pay&quot;,
+      &quot;data&quot; : {
+        &quot;type&quot;: &quot;basic&quot;,
+        &quot;iconUrl&quot; : &quot;https://ssl.pstatic.net/pay.png&quot;,
+        &quot;action&quot;: {
+          &quot;type&quot;: &quot;link&quot;,
+          &quot;data&quot; : {
+            &quot;url&quot; : &quot;http://www.ncloud.com&quot;
+          }
+        }
+      }
+    }
+  ],
+  &quot;event&quot;: &quot;send&quot;
+}
+</code></pre><p><em>Back to <a href="#table-of-contents">Table of Contents</a></em></p>
+<h2 id="persistent-menu">Persistent Menu</h2>
+<h3 id="text-buttons">text buttons</h3>
+<p><img src="../assets/chatbot-03-clip_image020.png" alt="image"></p>
+<pre><code>{
+  &quot;version&quot;: &quot;v2&quot;,
+  &quot;userId&quot;: &quot;U47b00b58c90f8e47428af8b7bddcda3d&quot;,
+  &quot;timestamp&quot;: 12345678,
+  &quot;persistentMenu&quot;: {
+    &quot;type&quot;: &quot;template&quot;,
+    &quot;title&quot;: &quot;Tap to hide the text menu&quot;,
+    &quot;data&quot; : {
+      &quot;contentTable&quot;:[
+        [
+          {
+            &quot;colSpan&quot; : 1,
+            &quot;rowSpan&quot; : 1,
+            &quot;data&quot; : {
+              &quot;type&quot;: &quot;button&quot;,
+              &quot;title&quot;: &quot;basic button, only title&quot;,
+              &quot;data&quot; : {
+                &quot;type&quot;: &quot;basic&quot;,
+                &quot;action&quot;: {
+                  &quot;type&quot;: &quot;link&quot;,
+                  &quot;data&quot; : {
+                    &quot;url&quot; : &quot;http://www.ncloud.com&quot;
+                  }
+                }
+              }
+            }
+          }
+        ],
+        [
+          {
+            &quot;colSpan&quot; : 1,
+            &quot;rowSpan&quot; : 1,
+            &quot;data&quot; : {
+              &quot;type&quot;: &quot;button&quot;,
+              &quot;title&quot;: &quot;basic button, only title&quot;,
+              &quot;data&quot; : {
+                &quot;type&quot;: &quot;basic&quot;,
+                &quot;action&quot;: {
+                  &quot;type&quot;: &quot;link&quot;,
+                  &quot;data&quot; : {
+                    &quot;url&quot; : &quot;http://www.ncloud.com&quot;
+                  }
+                }
+              }
+            }
+          }
+        ],
+        [
+          {
+            &quot;colSpan&quot; : 1,
+            &quot;rowSpan&quot; : 1,
+            &quot;data&quot; : {
+              &quot;type&quot;: &quot;button&quot;,
+              &quot;title&quot;: &quot;basic button, only title&quot;,
+              &quot;data&quot; : {
+                &quot;type&quot;: &quot;basic&quot;,
+                &quot;action&quot;: {
+                  &quot;type&quot;: &quot;link&quot;,
+                  &quot;data&quot; : {
+                    &quot;url&quot; : &quot;http://www.ncloud.com&quot;
+                  }
+                }
+              }
+            }
+          }
+        ]
+      ]
+    }
+  },
+  &quot;event&quot;: &quot;send&quot;
+}
+</code></pre><h3 id="image-buttons-use-small-icons">image buttons use small icons</h3>
+<p><img src="../assets/chatbot-03-clip_image021.png" alt="image"></p>
+<pre><code>{
+  &quot;version&quot;: &quot;v2&quot;,
+  &quot;userId&quot;: &quot;U47b00b58c90f8e47428af8b7bddcda3d&quot;,
+  &quot;timestamp&quot;: 12345678,
+  &quot;persistentMenu&quot;: {
+    &quot;type&quot;: &quot;template&quot;,
+    &quot;title&quot;: &quot;Tap to hide the image menu&quot;,
+    &quot;data&quot; : {
+      &quot;contentTable&quot;:[
+        [
+          {
+            &quot;colSpan&quot; : 2,
+            &quot;rowSpan&quot; : 2,
+            &quot;data&quot; : {
+              &quot;type&quot;: &quot;button&quot;,
+              &quot;title&quot;: &quot;action is link&quot;,
+              &quot;data&quot; : {
+                &quot;type&quot;: &quot;imageButton&quot;,
+                &quot;iconUrl&quot;: &quot;https://ssl.pstatic.net/CloudFunctions.png&quot;,
+                &quot;action&quot;: {
+                  &quot;type&quot;: &quot;link&quot;,
+                  &quot;data&quot; : {
+                    &quot;url&quot; : &quot;http://www.ncloud.com&quot;
+                  }
+                }
+              }
+            }
+          },
+          {
+            &quot;colSpan&quot; : 1,
+            &quot;rowSpan&quot; : 1,
+            &quot;data&quot; : {
+              &quot;type&quot;: &quot;button&quot;,
+              &quot;data&quot; : {
+                &quot;type&quot;: &quot;imageButton&quot;,
+                &quot;iconUrl&quot;: &quot;https://ssl.pstatic.net/CloudFunctions.png&quot;,
+                &quot;action&quot;: {
+                  &quot;type&quot;: &quot;link&quot;,
+                  &quot;data&quot; : {
+                    &quot;url&quot; : &quot;http://www.ncloud.com&quot;
+                  }
+                }
+              }
+            }
+          }
+        ],
+        [
+          {
+            &quot;colSpan&quot; : 1,
+            &quot;rowSpan&quot; : 1,
+            &quot;data&quot; : {
+              &quot;type&quot;: &quot;button&quot;,
+              &quot;data&quot; : {
+                &quot;type&quot;: &quot;imageButton&quot;,
+                &quot;iconUrl&quot;: &quot;https://ssl.pstatic.net/CloudFunctions.png&quot;,
+                &quot;action&quot;: {
+                  &quot;type&quot;: &quot;link&quot;,
+                  &quot;data&quot; : {
+                    &quot;url&quot; : &quot;http://www.ncloud.com&quot;
+                  }
+                }
+              }
+            }
+          }
+        ]
+      ]
+    }
+  },
+  &quot;event&quot;: &quot;send&quot;
+}
+</code></pre><h3 id="buttons-use-one-background-image">buttons use one background image</h3>
+<p><img src="../assets/chatbot-03-clip_image022.png" alt="image"></p>
+<pre><code>{
+  &quot;version&quot;: &quot;v2&quot;,
+  &quot;userId&quot;: &quot;U47b00b58c90f8e47428af8b7bddcda3d&quot;,
+  &quot;timestamp&quot;: 12345678,
+  &quot;persistentMenu&quot;: {
+    &quot;type&quot;: &quot;template&quot;,
+    &quot;title&quot;: &quot;Use one background image&quot;,
+    &quot;data&quot; : {
+      &quot;contentTable&quot;:[
+        [
+          {
+            &quot;colSpan&quot; : 1,
+            &quot;rowSpan&quot; : 1,
+            &quot;data&quot; : {
+              &quot;type&quot;: &quot;button&quot;,
+              &quot;data&quot; : {
+                &quot;type&quot;: &quot;basic&quot;,
+                &quot;action&quot;: {
+                  &quot;type&quot;: &quot;link&quot;,
+                  &quot;data&quot; : {
+                    &quot;url&quot; : &quot;http://www.ncloud.com&quot;
+                  }
+                }
+              }
+            }
+          },
+          {
+            &quot;colSpan&quot; : 1,
+            &quot;rowSpan&quot; : 1,
+            &quot;data&quot; : {
+              &quot;type&quot;: &quot;button&quot;,
+              &quot;data&quot; : {
+                &quot;type&quot;: &quot;basic&quot;,
+                &quot;action&quot;: {
+                  &quot;type&quot;: &quot;link&quot;,
+                  &quot;data&quot; : {
+                    &quot;url&quot; : &quot;http://www.ncloud.com&quot;
+                  }
+                }
+              }
+            }
+          }
+        ],
+        [
+          {
+            &quot;colSpan&quot; : 1,
+            &quot;rowSpan&quot; : 1,
+            &quot;data&quot; : {
+              &quot;type&quot;: &quot;button&quot;,
+              &quot;data&quot; : {
+                &quot;type&quot;: &quot;basic&quot;,
+                &quot;action&quot;: {
+                  &quot;type&quot;: &quot;link&quot;,
+                  &quot;data&quot; : {
+                    &quot;url&quot; : &quot;http://www.ncloud.com&quot;
+                  }
+                }
+              }
+            }
+          },
+          {
+            &quot;colSpan&quot; : 1,
+            &quot;rowSpan&quot; : 1,
+            &quot;data&quot; : {
+              &quot;type&quot;: &quot;button&quot;,
+              &quot;data&quot; : {
+                &quot;type&quot;: &quot;basic&quot;,
+                &quot;action&quot;: {
+                  &quot;type&quot;: &quot;link&quot;,
+                  &quot;data&quot; : {
+                    &quot;url&quot; : &quot;http://www.ncloud.com&quot;
+                  }
+                }
+              }
+            }
+          }
+        ]
+      ]
+    }
+  },
+  &quot;event&quot;: &quot;send&quot;
+}
+</code></pre><p><em>Back to <a href="#table-of-contents">Table of Contents</a></em></p>
+<h2 id="error-define">Error Define</h2>
+<ul>
+<li>Http Status Code: 500</li>
+<li>Body Example<pre><code>  {
+    &quot;code&quot;: &quot;1001&quot;,
+    &quot;message&quot;: &quot;domain code test not found&quot;,
+    &quot;timestamp&quot;: 12345678
+  }
+</code></pre></li>
+<li>Body Introduce</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Must Exists</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>code</td>
+<td>string</td>
+<td>true</td>
+<td>error code</td>
+</tr>
+<tr>
+<td>event</td>
+<td>string</td>
+<td>true</td>
+<td>fixed string value &quot;send&quot;</td>
+</tr>
+<tr>
+<td>timestamp</td>
+<td>long</td>
+<td>true</td>
+<td>response time milliseconds since January 1, 1970, 00:00:00 GMT</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Error Code Define</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>code</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>4000</td>
+<td>request param invalid</td>
+</tr>
+<tr>
+<td>4010</td>
+<td>Unauthorized</td>
+</tr>
+<tr>
+<td>4030</td>
+<td>Forbidden to access</td>
+</tr>
+<tr>
+<td>4031</td>
+<td>Signature validate failed</td>
+</tr>
+<tr>
+<td>4032</td>
+<td>timestamp exceeded time window(10000ms)</td>
+</tr>
+<tr>
+<td>1000</td>
+<td>version not support</td>
+</tr>
+<tr>
+<td>1001</td>
+<td>Not found domain code</td>
+</tr>
+<tr>
+<td>1002</td>
+<td>check url param is invalid</td>
+</tr>
+<tr>
+<td>5000</td>
+<td>Unknown service error</td>
+</tr>
+<tr>
+<td>5010</td>
+<td>Current protocol version not support this reply structure</td>
+</tr>
+</tbody>
+</table>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="chatbot-3-8_ja.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 2-6. 正規表現の入力ガイド">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"2-7. チャットボットのCustom API Spec.","level":"1.3.7","depth":2,"next":{"title":"3.チャンネル連動ガイド","level":"1.4","depth":1,"ref":"","articles":[{"title":"3-1. チャンネル連動ガイド - LINE","level":"1.4.1","depth":2,"path":"manual/chatbot-2-1_ja.md","ref":"./manual/chatbot-2-1_ja.md","articles":[]}]},"previous":{"title":"2-6. 正規表現の入力ガイド","level":"1.3.6","depth":2,"path":"manual/chatbot-3-8_ja.md","ref":"./manual/chatbot-3-8_ja.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"manual/chatbot-3-7_ja.md","mtime":"2019-10-28T13:49:09.045Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-11-01T06:49:59.410Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
